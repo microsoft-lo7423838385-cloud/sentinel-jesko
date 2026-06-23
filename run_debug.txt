@@ -1,0 +1,119 @@
+[Tue 10/07/2025 13:51:00.41] run.bat invoked with args:  
+[Tue 10/07/2025 13:51:00.53] run.bat invoked with args: relaunch 
+[Tue 10/07/2025 13:52:28.36] run.bat invoked with args:  
+[Tue 10/07/2025 13:52:28.50] run.bat invoked with args: relaunch 
+[Tue 10/07/2025 13:52:54.23] run.bat invoked with args:  
+[Tue 10/07/2025 13:52:54.37] run.bat invoked with args: relaunch 
+[Tue 10/07/2025 13:54:10.86] run.bat invoked with args: relaunch 
+[Tue 10/07/2025 13:55:03.90] run.bat invoked with args: relaunch 
+[Tue 10/07/2025 13:55:03.91] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 13:55:03.92] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 13:55:03.92] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 13:55:03.92] PY variable (raw) =  
+[Tue 10/07/2025 15:54:15.03] run.bat invoked with args:  
+[Tue 10/07/2025 15:54:15.03] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 15:54:15.04] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 15:54:15.04] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 15:54:15.04] PY variable (raw) =  
+[Tue 10/07/2025 16:01:20.37] run.bat invoked with args:  
+[Tue 10/07/2025 16:01:20.37] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:01:20.39] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:01:20.39] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:01:20.39] PY variable (raw) =  
+[Tue 10/07/2025 16:01:22.43] run.bat invoked with args:  
+[Tue 10/07/2025 16:01:22.43] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:01:22.45] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:01:22.45] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:01:22.45] PY variable (raw) =  
+[Tue 10/07/2025 16:01:25.25] run.bat invoked with args:  
+[Tue 10/07/2025 16:01:25.25] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:01:25.25] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:01:25.26] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:01:25.26] PY variable (raw) =  
+[Tue 10/07/2025 16:04:10.98] run.bat invoked with args:  
+[Tue 10/07/2025 16:04:11.00] VISUAL_START_BANNER 
+[Tue 10/07/2025 16:04:11.00] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:04:11.01] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:04:11.01] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:04:11.01] PY variable (raw) =  
+[Tue 10/07/2025 16:22:11.60] run.bat invoked with args:  
+[Tue 10/07/2025 16:22:11.60] VISUAL_START_BANNER 
+[Tue 10/07/2025 16:22:11.61] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:22:11.61] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:22:11.61] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:22:11.61] PY variable (raw) =  
+[Tue 10/07/2025 16:41:52.38] run.bat invoked with args:  
+[Tue 10/07/2025 16:41:52.39] VISUAL_START_BANNER 
+[Tue 10/07/2025 16:41:52.39] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:41:52.40] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:41:52.40] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:41:52.40] PY variable (raw) =  
+[Tue 10/07/2025 16:41:53.97] run.bat invoked with args:  
+[Tue 10/07/2025 16:41:53.97] VISUAL_START_BANNER 
+[Tue 10/07/2025 16:41:53.98] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:41:53.98] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:41:53.98] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:41:53.98] PY variable (raw) =  
+[Tue 10/07/2025 16:50:57.82] run.bat invoked with args:  
+[Tue 10/07/2025 16:50:57.83] VISUAL_START_BANNER 
+[Tue 10/07/2025 16:50:57.84] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 16:50:57.84] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 16:50:57.84] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 16:50:57.84] PY variable (before venv check) =  
+[Tue 10/07/2025 16:50:57.85] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe
+[<current_date> <current_time>] run.bat invoked with args: 
+[<current_date> <current_time>] VISUAL_START_BANNER 
+[<current_date> <current_time>] expanded %~f0 = c:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[<current_date> <current_time>] expanded %~dp0 = c:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[<current_date> <current_time>] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra
+[<current_date> <current_time>] PY variable (before venv check) =  
+[<current_date> <current_time>] PY variable (after venv check) = c:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe[Tue 10/07/2025 17:02:06.93] run.bat invoked with args:  
+[Tue 10/07/2025 17:02:06.93] VISUAL_START_BANNER 
+[Tue 10/07/2025 17:02:06.94] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 17:02:06.94] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 17:02:06.94] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 17:02:06.94] PY variable (before venv check) =  
+[Tue 10/07/2025 17:02:06.97] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe 
+[Tue 10/07/2025 17:06:02.87] run.bat invoked with args:  
+[Tue 10/07/2025 17:06:02.88] VISUAL_START_BANNER 
+[Tue 10/07/2025 17:06:02.88] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 17:06:02.88] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 17:06:02.88] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 17:06:02.88] PY variable (before venv check) =  
+[Tue 10/07/2025 17:06:02.89] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe 
+[Tue 10/07/2025 17:09:16.70] run.bat invoked with args:  
+[Tue 10/07/2025 17:09:16.70] VISUAL_START_BANNER 
+[Tue 10/07/2025 17:09:16.70] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 17:09:16.71] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 17:09:16.71] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 17:09:16.71] PY variable (before venv check) =  
+[Tue 10/07/2025 17:09:16.72] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe 
+[Tue 10/07/2025 17:09:18.16] run.bat invoked with args:  
+[Tue 10/07/2025 17:09:18.17] VISUAL_START_BANNER 
+[Tue 10/07/2025 17:09:18.17] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 17:09:18.17] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 17:09:18.17] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 17:09:18.17] PY variable (before venv check) =  
+[Tue 10/07/2025 17:09:18.18] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe 
+[Tue 10/07/2025 17:10:27.41] run.bat invoked with args:  
+[Tue 10/07/2025 17:10:27.42] VISUAL_START_BANNER 
+[Tue 10/07/2025 17:10:27.42] performing short startup timeout 
+[Tue 10/07/2025 17:10:34.12] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 17:10:34.12] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 17:10:34.12] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 17:10:34.12] PY variable (before venv check) =  
+[Tue 10/07/2025 17:10:34.13] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe 
+[Tue 10/07/2025 17:13:34.69] run.bat invoked with args: -keepopen 
+[Tue 10/07/2025 17:13:34.70] VISUAL_START_BANNER 
+[Tue 10/07/2025 17:13:34.70] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 17:13:34.71] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 17:13:34.71] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 17:13:34.71] PY variable (before venv check) =  
+[Tue 10/07/2025 17:13:34.72] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe 
+[Tue 10/07/2025 17:16:32.92] run.bat invoked with args:  
+[Tue 10/07/2025 17:16:32.93] VISUAL_START_BANNER 
+[Tue 10/07/2025 17:16:32.95] expanded %~f0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\run.bat 
+[Tue 10/07/2025 17:16:32.95] expanded %~dp0 = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\ 
+[Tue 10/07/2025 17:16:32.96] current CD = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra 
+[Tue 10/07/2025 17:16:32.96] PY variable (before venv check) =  
+[Tue 10/07/2025 17:16:32.97] PY variable (after venv check) = C:\Users\Administrator\Documents\ultra sender\Advanced Sender ultra\.venv\Scripts\python.exe 

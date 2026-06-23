@@ -1,0 +1,10 @@
+Hello,
+
+FYI - please see the attached message regarding {{ company_phrase | default('your account') }}.
+
+Thanks,
+{{ sender_name | default('Support') }}
+
+---
+{{ physical_address }}
+To unsubscribe, please visit: {{ unsubscribe_link }}

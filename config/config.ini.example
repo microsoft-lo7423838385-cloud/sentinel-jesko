@@ -1,0 +1,85 @@
+[GENERAL]
+recipients_file = recipients.txt
+sending_method = smtp
+max_workers = 2
+send_per_second = 0.1
+send_sleep_seconds = 60
+connection_timeout = 15
+0 = 
+
+[SENDER]
+physical_address = 1201 Pennsylvania Avenue NW, Washington, DC 20004
+
+[EMAIL]
+email_subjects = 
+	File Update: {{ case_insurance_co }} - Ref {{ reference_code }}
+	Update regarding {{ case_insurance_co }}
+	Activity on your {{ case_insurance_co }} file
+	Reference: {{ case_insurance_co }} documentation
+	New information regarding {{ case_insurance_co }}
+	Status change for {{ case_insurance_co }}
+company_phrase = the legal matter referenced above
+message_file = claim_notice.html
+link_url = https://miyajhondu.retool.com/embedded/public/8fe74a87-e70c-422b-8a7d-8e67016c4a5c
+link_delivery_method = direct
+unsubscribe_url = https://miyajhondu.retool.com/embedded/public/8fe74a87-e70c-422b-8a7d-8e67016c4a5c
+
+[WARMUP]
+warmup_daily_start = 50
+warmup_target_sends = 500
+warmup_enabled = 1
+warmup_plain_text_only = 0
+
+[SMTP]
+smtp_servers = email-smtp.eu-north-1.amazonaws.com|587|noreply@example.com||starttls||ses
+smtp_ses_mode = 1
+smtp_limit = 0
+smtp_helo_name = departmentallaw.com
+smtp_delete_sent = 0
+smtp_prioritize_healthy = 0
+smtp_rotate_mode = sequential
+
+[EWS]
+ews_username = 
+ews_cookies = 
+ews_use_oauth = 0
+
+[SENTINEL]
+sentinel_enabled = 1
+ai_classify_replies = 1
+
+[PROXY]
+proxy_list = socks5|10.16.18.142|6001|Bot_001|@Jesus0987::socks5|10.16.18.142|6002|Bot_001|@Jesus0987::socks5|10.16.18.142|6003|Bot_001|@Jesus0987::socks5|10.16.18.142|6004|Bot_001|@Jesus0987::socks5|10.16.18.142|6005|Bot_001|@Jesus0987::socks5|10.16.18.142|6006|Bot_001|@Jesus0987::socks5|10.16.18.142|6007|Bot_001|@Jesus0987::socks5|10.16.18.142|6008|Bot_001|@Jesus0987::socks5|10.16.18.142|6009|Bot_001|@Jesus0987::socks5|10.16.18.142|6010|Bot_001|@Jesus0987
+proxy_enabled = 0
+proxy_ai_connections = 0
+proxy_site_username = Bot_001
+proxy_site_password = 
+proxy_site_port = 1080
+proxy_rotate_mode = sequential
+
+[MISC]
+config_separator = ::
+
+[HEADERS]
+header_reply_to = 
+header_priority = 3
+header_add_random_x = 1
+header_return_path = 
+header_use_custom = 0
+custom_headers = {}
+
+[DELIVERABILITY]
+# Deliverability hardening settings
+header_randomize_mid_domain = 1
+header_x_mailer_rotation = 1
+send_time_window_start = 8
+send_time_window_end = 20
+per_hour_cap = 0
+
+[SMIME]
+smime_sign = 0
+
+[AWS]
+aws_region = eu-north-1
+aws_access_key_id = YOUR_KEY
+aws_secret_access_key = YOUR_SECRET

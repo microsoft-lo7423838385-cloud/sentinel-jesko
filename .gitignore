@@ -1,0 +1,31 @@
+# Secrets & credentials
+.env
+config/config.ini
+config/seed_recipients.txt
+*.key
+*.pem
+*.p12
+
+# Databases & state
+logs/*.db
+logs/*.log
+logs/*.csv
+logs/state.db
+logs/warmup_state.db
+logs/sender.log
+logs/verification_log.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Analysis files (phishing sample — keep local only)
+/deprecated/
+/analysis/
+agents good work/

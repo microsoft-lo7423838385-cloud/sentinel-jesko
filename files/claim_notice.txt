@@ -1,0 +1,13 @@
+Hello {{ recipient_name | default('Sir/Madam') }},
+
+A secure document related to the legal matter referenced above (Case: {{ case_insurance_co }} #{{ case_claim_number }}) has been generated for your review.
+
+Reference ID: {{ reference_code }}
+Date: {{ current_date }}
+
+Please open the attached PDF document to view the details.
+
+Sincerely,
+{{ sender_name }}
+{{ sender_company }}
+{{ physical_address | replace('<br>', '\n') }}

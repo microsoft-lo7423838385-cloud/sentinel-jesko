@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">    
+    <title>Your Document from {{ sender_company | default('Our Team') }}</title>
+    <style>
+        body {
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 580px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+        }
+        .security-info {
+            background-color: #f0f4f8;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .footer {
+            font-size: 14px;
+            color: #888;
+            padding-top: 15px;
+            border-top: 1px solid #eeeeee;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p style="font-size: 18px; font-weight: bold; margin-top: 0; margin-bottom: 20px;">Your {{ sender_company }} Document is Ready</p>
+        <p>Hello {{ recipient_name | default('there') }},</p>        
+        <p>Your <strong>{{ document_type | default('document') }}</strong> from <strong>{{ sender_company | default('our team') }}</strong> is now ready for your review. This was generated on {{ current_date }} in relation to your account ending in {{ account_id | default('...') }}.</p>
+        <p>Please click the secure button below to access your document or view the attached PDF file for details.</p>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{ link }}" target="_blank" style="background-color: #0d6efd; color: #ffffff; padding: 14px 30px; text-decoration: none; border-radius: 4px; display: inline-block; font-weight: bold; font-size: 16px;">VIEW DOCUMENT</a>
+        </div>
+
+        <div class="security-info">
+            <p style="margin-top:0;"><strong>Please verify the following details:</strong></p>
+            <ul style="margin-bottom:0;">
+                <li>The sender's email address is from an official company domain.</li>
+            </ul>
+        </div>
+        
+        <p>If you did not request this document, please contact our support team immediately.</p>
+        
+        <div style="margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; color: #333333;">
+            {% if sender_seal_cid %}
+            <div style="margin-bottom: 12px;">
+                <img src="cid:{{ sender_seal_cid }}" alt="Official Seal" style="max-width: 130px; display: block;">
+            </div>
+            {% else %}
+            <p style="font-weight: bold; color: #555555; margin-bottom: 10px;">Official Seal</p>
+            {% endif %}
+            
+            <p style="margin: 0; font-size: 15px;"><strong>{{ sender_name }}</strong></p>
+            <p style="margin: 0; font-size: 14px; color: #444444;">{{ sender_company }}</p>
+            <p style="margin: 0; font-size: 13px; color: #666666;">{{ physical_address | safe }}</p>
+        </div>
+
+        <div class="footer">
+            <p>To unsubscribe from future communications, please <a href="{{ unsubscribe_link }}" title="Unsubscribe from these messages">click here</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

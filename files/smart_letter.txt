@@ -1,0 +1,82 @@
+{Notification of Transaction
+
+Hello {{ recipient_name | default('there') }},
+
+This message is to inform you about an update regarding {{ company_phrase | default('your account') }}.
+
+{% if link_delivery_method == 'direct' -%}
+You can securely view the transaction details using the link below:
+{{ link }}
+{%- else -%}
+The secure link containing the transaction details is attached to this email.
+{%- endif %}
+
+Reference Number: {{ reference_code }}
+
+Kind regards,
+{{ sender_name }}
+{{ sender_company }}
+
+{{ physical_address }}
+
+To unsubscribe from future notifications, please visit: {{ unsubscribe_link }}|Notification of Update
+
+Hello {{ recipient_name | default('there') }},
+
+This notice concerns an update related to {{ company_phrase }} and the above‑referenced Travelers claim.
+
+{% if link_delivery_method == 'direct' -%}
+Please review the case details securely using the link below:
+{{ link }}
+{%- else -%}
+A secure file containing the case details is attached to this email.
+{%- endif %}
+
+Reference Number: {{ reference_code }}
+
+Regards,
+{{ sender_name }}
+{{ sender_company }}
+{{ physical_address }}
+
+To unsubscribe, visit: {{ unsubscribe_link }}|Formal Notification
+
+Hello {{ recipient_name | default('there') }},
+
+This message serves as formal notification regarding a motion filed in connection with {{ company_phrase }} and the referenced Progressive claim.
+
+{% if link_delivery_method == 'direct' -%}
+You may access the motion documents securely using the link below:
+{{ link }}
+{%- else -%}
+The motion documents have been provided in the secure attachment.
+{%- endif %}
+
+Reference Number: {{ reference_code }}
+
+Regards,
+{{ sender_name }}
+{{ sender_company }}
+{{ physical_address }}
+
+To unsubscribe, visit: {{ unsubscribe_link }}|Legal Notification
+
+Hello {{ recipient_name | default('there') }},
+
+This communication concerns {{ company_phrase }} and the referenced State Farm claim, in which you are listed as a defendant.
+
+{% if link_delivery_method == 'direct' -%}
+Please access the related documents securely using the link below:
+{{ link }}
+{%- else -%}
+The related documents are included in the secure attachment.
+{%- endif %}
+
+Reference Number: {{ reference_code }}
+
+Regards,
+{{ sender_name }}
+{{ sender_company }}
+{{ physical_address }}
+
+To unsubscribe, visit: {{ unsubscribe_link }}}

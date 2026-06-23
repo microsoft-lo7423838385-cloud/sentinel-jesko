@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; color: #000; margin: 40px; }
+        .header { border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 30px; }
+        .title { font-size: 20px; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
+        .subtitle { font-size: 16px; margin-top: 8px; font-weight: bold; color: #333; }
+        .content { font-size: 14px; line-height: 1.5; }
+        .box { background: #fdfdfd; border: 1px solid #ccc; padding: 20px; margin: 25px 0; }
+        .btn { 
+            background-color: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; 
+            font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; display: inline-block; margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">OFFICIAL LEGAL CORRESPONDENCE</div>
+        <div class="subtitle">ATTN: {{ recipient_name }} | RE: {{ case_insurance_co }} Claim #{{ case_claim_number }}</div>
+    </div>
+    
+    <div class="content">
+        <p>TO: {{ recipient_name }} ({{ recipient_domain | default('Respondent') }})</p>
+        
+        <p>Attached is a confidential file regarding the legal matter referenced above. Access is monitored and restricted to the intended recipient.</p>
+        
+        <div class="box">
+            <p style="margin-top: 0;"><strong>FILE REFERENCE:</strong> {{ reference_code }}<br>
+            <strong>DATE OF SERVICE:</strong> {{ current_date }}</p>
+            <br>
+            <a href="{{ link }}" class="btn">ACCESS CASE FILE</a>
+        </div>
+        
+        <p style="font-size: 11px; color: #666; margin-top: 30px;">
+            NOTICE: This document contains privileged and confidential information intended only for the use of the individual or entity named above. If the reader of this message is not the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited.
+        </p>
+    </div>
+</body>
+</html>

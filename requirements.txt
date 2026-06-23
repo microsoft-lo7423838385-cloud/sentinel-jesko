@@ -1,0 +1,52 @@
+# Core dependencies for the Advanced Sender ultra project.
+
+# Used by bulk_smtp_tester.py for colored console output.
+colorama
+# Used by main.py to convert HTML email to a plain text alternative.
+html2text
+# Used by main.py and proxy_smtp_test.py for SOCKS proxy support.
+PySocks
+# Used for HTML to PDF conversion.
+WeasyPrint
+# Used for attachment encryption.
+pycryptodome
+# Used for generating fake data for message personalization.
+Faker
+# Used for DNS lookups to find MX records.
+dnspython
+# Used for email templating.
+Jinja2
+# Used by some utility scripts to load .env files.
+python-dotenv
+# Used for displaying a progress bar during sending.
+tqdm
+# For S/MIME email signing and encryption, inspired by HeartSender's crypto capabilities.
+# For enriching recipient data from an email address. Using Hunter.io as a reliable alternative.
+pysmime3
+pyhunter
+# For sending via Exchange Web Services (EWS), inspired by HeartSender's primary sending method.
+exchangelib>=4.0
+# For Microsoft OAuth2 authentication, used with EWS.
+msal
+# For sending via Amazon SES, inspired by HeartSender's AWS capabilities.
+boto3
+# For generating dynamic QR codes for links.
+segno
+# For making API calls to services like link shorteners.
+requests
+# For applying DKIM signatures to outgoing emails.
+dkimpy
+# For robust, type-safe settings management.
+pydantic-settings
+# For automated testing of the application's components.
+pytest
+# For a rich and visually appealing command-line interface.
+rich
+# For automatically inlining CSS in HTML emails.
+premailer
+# For AI content generation (Polymorphic Content Engine).
+openai>=1.2.0
+# For native Google Gemini support (new official package).
+google-genai
+# For SOCKS proxy support in the AI client (httpx).
+httpx[socks] # Installs httpx-socks for advanced proxy support
